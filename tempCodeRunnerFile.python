@@ -1,0 +1,38 @@
+# For armstrong number
+num = int(input("Enter the number to check whether the armstrong or not : "))
+n=len(str(num))
+x=num
+sum=0
+while(x>0):
+          rem=x%10
+          sum+=rem**n
+          x//=10
+if(sum==num):
+          print("Number is armstrong")
+else:
+    print("Number is not armstrong")
+
+#For Factorial
+x=int(input("Enter the number : "))
+fact=1
+while(x>0):
+    fact=fact*x
+    x=x-1
+print("Factorial of a number which entered : ",fact)
+
+#For Leap Year
+year=int(input("Enter the year : "))
+if(year%400==0 and year%100==0):
+    print("It's a leap year")
+else:
+     print("It's not a leap year")
+
+#For Pascal Triangle
+n=int(input("enter a number : "))
+for i in range(n):
+    for j in range(n-i+1):
+        print(end=" ")
+    for j in range(i+1):
+        print(factorial(i)//(factorial(j)*factorial(i-j)),end=" ")
+    print()
+      
